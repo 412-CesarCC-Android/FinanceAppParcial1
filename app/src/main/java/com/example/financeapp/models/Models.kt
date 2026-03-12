@@ -25,11 +25,11 @@ val usuario = User(
     saldo = 1500.00
 )
 
-val symmaryCards = listOf(
+val summaryCards = listOf(
     SummaryCard(
         titulo = "Actividad",
         monto  = "$280.99",
-        color = Color(0xFFF5EFE6)
+        color = Color(0xFFE6F2ED)
     ),
     SummaryCard(
         titulo = "Ventas",
