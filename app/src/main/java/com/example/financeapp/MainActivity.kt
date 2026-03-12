@@ -28,6 +28,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.financeapp.components.SeccionTarjetas
+import com.example.financeapp.components.SeccionTransacciones
 import com.example.financeapp.models.usuario
 import com.example.financeapp.ui.theme.FinanceAppTheme
 
@@ -58,7 +59,7 @@ fun HomeScreen(innerPadding: PaddingValues) {
     ) {
         Header()
         SeccionTarjetas()
-        // SeccionTransacciones()
+        SeccionTransacciones()
     }
 }
 
@@ -73,8 +74,8 @@ fun Header() {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically
+        Row ( // Avatar info
+             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
                 imageVector = Icons.Default.Person,
@@ -101,7 +102,7 @@ fun Header() {
                 )
             }
         }
-        Icon(
+        Icon( //el icono hamburguesa
             imageVector = Icons.Default.Menu,
             contentDescription = "menu",
             tint = colors.onBackground,

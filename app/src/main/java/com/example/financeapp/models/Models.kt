@@ -21,7 +21,7 @@ data class Transaction(
 )
 
 val usuario = User(
-    nombre = "Vrad",
+    nombre = "tilin",
     saldo = 1500.00
 )
 
